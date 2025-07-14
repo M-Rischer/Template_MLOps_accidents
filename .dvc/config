@@ -1,10 +1,13 @@
 [core]
     analytics = false
-    remote = remote_storage
+    remote = origin
 ['remote "remote_storage"']
     url = ../../dvc_remote
 ['remote "remote_gdrive"']
     url = gdrive://1UWU8JU0K7mcOERk72XaZoESPS-kgX1F5?
     gdrive_use_service_account = false
-    gdrive_client_id = "einefolderid.apps.googleusercontent.com"
-    gdrive_client_secret = "hierstehteinsecret"
+    gdrive_client_id = einefolderid.apps.googleusercontent.com
+    gdrive_client_secret = hierstehteinsecret
+['remote "origin"']
+    url = s3://dvc
+    endpointurl = https://dagshub.com/M-Rischer/Template_MLOps_accidents.s3
